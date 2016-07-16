@@ -1,9 +1,6 @@
 # Meteor packages used by this project, one per line.
-# Check this file (and the other files in this directory) into your repository.
-#
-# 'meteor add' and 'meteor remove' will edit this file for you,
-# but you can also edit it by hand.
 
+#main
 meteor-base             # Packages every Meteor app needs to have
 mobile-experience       # Packages for a great mobile UX
 mongo                   # The database Meteor supports right now
@@ -17,5 +14,31 @@ standard-minifier-js    # JS minifier run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
-autopublish             # Publish all data to the clients (for prototyping)
-insecure                # Allow all DB writes from clients (for prototyping)
+# collections
+aldeed:autoform
+aldeed:simple-schema
+aldeed:collection2
+matteodem:easy-search
+zaku:smart-record
+
+#router
+kadira:flow-router
+
+
+# accounts
+accounts-ui
+less
+accounts-base
+accounts-password
+accounts-ui-unstyled
+
+# Utilities
+check
+underscore
+audit-argument-checks
+chrismbeckett:toastr
+mdg:validated-method
+aldeed:template-extension
+tunifight:loggedin-mixin
+mdg:validation-error
+babrahams:constellation
