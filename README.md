@@ -1,6 +1,6 @@
 # indexCards2
 
 ##install
-git clone/fork
-cd to clone dir
-meteor
+clone or fork this repository to a local directory of your choice  
+navigate to said directory  
+run the command "meteor"  
