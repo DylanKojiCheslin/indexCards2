@@ -1,4 +1,4 @@
-import { Tag } from '../../api/Tag.js'
+import { Tag } from '../../api/tag/Tag.js'
 import "./individualTag.html"
 
 Template.individualTag.onCreated(function() {

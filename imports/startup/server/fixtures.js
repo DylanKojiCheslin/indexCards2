@@ -1,5 +1,5 @@
 import { Meteor } from 'meteor/meteor'
-import { Tag } from '../../api/Tag.js'
+import { Tag } from '../../api/tag/Tag.js'
 
 Meteor.startup(function(){
   if (Tag.isEmpty()) {
