@@ -1,3 +1,7 @@
 <template name="listOfIndividualTags">
   each tag in listOfTags
+  {{#each tag in listOfTags}}
+    stuff
+    {{> individualTag text=tag.text}}
+  {{/each}}
 </template>
