@@ -1,22 +1,24 @@
 import './listOfIndividualTags.html';
-import { Template } from 'meteor/templating';
 import "./individualTag.html"
-
+import { Template } from 'meteor/templating';
+import { Tag } from '../../api/tag/Tag.js'
 
 Template.listOfIndividualTags.onCreated(function() {
 
-  console.log('listOfIndividualTags created');
-  this.subscribe("listOfTagsSubscription");
-  // this.autorun(() => {
-  //   console.log('stuff');
-  //   this.subscribe("listOfTagsSubscription");
-  // });
+  // this.subscribe("listOfTagsSubscription");
+  this.autorun(() => {
+    this.subscribe("listOfTagsSubscription");
+  });
 });
 
 
 Template.listOfIndividualTags.helpers({
   listOfTags: function(){
-    console.log('listOfIndividualTags helper');
-    return Tag.cursor({});
+    let _theTags = Tag.cursor({});
+    console.log(
+    'listOfTags helper '
+    );
+    console.log(_theTags);
+    return _theTags;
   }
 });
